@@ -41,6 +41,6 @@ def Table(df):
                        align='left')))
     fig.update_layout(height=1500, title ={'text': "Seminar Topics", 'font': {'size': 22}},title_x=0.5
                      )
-    return st.plotly_chart(fig,use_container_width=False)
+    return st.plotly_chart(fig,use_container_width=True)
 
 Table(df)
